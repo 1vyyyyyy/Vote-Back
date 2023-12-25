@@ -24,15 +24,22 @@ public class VoteManage {
 
     private Boolean enableWeight;
 
-    private Object weights;
+    private Integer weight0;
+
+    private Integer weight1;
+
+    private Integer weight2;
 
     private String weightsStr;
+
+    private String result;
+
     public void setCandidates() {
         this.candidatesStr = new Gson().toJson(candidates);
     }
 
-    public void setWeights() {
-        this.weightsStr = new Gson().toJson(weights);
-    }
+//    public void setWeights() {
+//        this.weightsStr = new Gson().toJson(weights);
+//    }
 }
 

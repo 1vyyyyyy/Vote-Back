@@ -10,6 +10,8 @@ public interface UserService {
 
     IPage<User> findAll(Page<User> page);
 
+    int findUserType(Integer userId);
+
     User findById(Integer userId);
 
     int deleteById(Integer userId);

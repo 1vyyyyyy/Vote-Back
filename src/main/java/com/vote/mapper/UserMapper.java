@@ -18,6 +18,9 @@ public interface UserMapper {
     @Select("select * from user")
     IPage<User> findAll(Page page);
 
+    @Select("select userType from user where userId = #{userId}")
+    int findUserType(Integer userId);
+
     @Select("select * from user where userId = #{userId}")
     User findById(Integer userId);
 
